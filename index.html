@@ -44,6 +44,10 @@
             </li>
 
             <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+
+            <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -317,6 +321,28 @@
         </div>
       </section>
 
+      <!-- Gallery Section (Image Slider) -->
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <div class="section-heading">
+            <p>Creative work</p>
+
+            <h2>Gallery</h2>
+          </div>
+
+          <div class="gallery-slider-wrap">
+            <!-- Each <img> inside this container becomes a slide -->
+            <div id="gallery-slider">
+              <img src="images/gallery-1.jpg" alt="Gallery image 1" />
+              <img src="images/gallery-2.jpg" alt="Gallery image 2" />
+              <img src="images/gallery-3.jpg" alt="Gallery image 3" />
+              <img src="images/gallery-4.jpg" alt="Gallery image 4" />
+              <img src="images/gallery-5.jpg" alt="Gallery image 5" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section -->
       <section id="contact" class="section contact-section">
         <div class="container">
@@ -432,5 +458,11 @@
         <p>Web Development | Software Development | Creative Design</p>
       </div>
     </footer>
+
+    <!-- Image slider -->
+    <script src="slider.js"></script>
+    <script>
+      new ImageSlider("#gallery-slider", { duration: 600 });
+    </script>
   </body>
 </html>
